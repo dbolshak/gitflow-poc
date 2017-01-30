@@ -10,6 +10,6 @@ public class ServerTest {
 
     @Test
     public void sendMessage() {
-        Assert.assertTrue(new Server().sendMessage("Hello gitflow"));
+        Assert.assertTrue(new Server().sendMessage("Hello gitflow\n"));
     }
 }
