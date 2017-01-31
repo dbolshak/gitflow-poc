@@ -1,8 +1,9 @@
 package com.dbolshak.gitflow.poc;
 
-import org.junit.Assert;
 import org.junit.Test;
-import com.dbolshak.gitflow.poc.MessageBuilder;
+
+import static com.dbolshak.gitflow.poc.MessageBuilder.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by dbolshak on 30/01/2017.
@@ -12,7 +13,7 @@ public class MessageBuilderTest {
 
     @Test
     public void buildMessage() {
-        Message message = MessageBuilder.build(TEST_MESSAGE);
-       Assert.assertEquals(Message.MESSAGE_TAG + TEST_MESSAGE, message.getMessage());
+       assertEquals(Message.MESSAGE_TAG + TEST_MESSAGE,
+               build(TEST_MESSAGE).getMessage());
     }
 }
