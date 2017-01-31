@@ -13,6 +13,6 @@ public class MessageBuilderTest {
     @Test
     public void buildMessage() {
         Message message = MessageBuilder.build(TEST_MESSAGE);
-       Assert.assertEquals(TEST_MESSAGE, message.getMessage());
+       Assert.assertEquals(Message.MESSAGE_TAG + TEST_MESSAGE, message.getMessage());
     }
 }
